@@ -2,12 +2,14 @@
 
 # Environment
 Python with ``ArcPy`` package
-# Data preparation
-- ``DEM-modeled drainage network.shp``:the DEM-modeled drainage network polyline
-- ``RS-mapped river network.shp``:the river centerlines of the RS water body mask 
-- ``RS water mask.tif``:the binary water body mask, water is set to 1, non-water is 0
-## Install tools
-``2DSpecTools`` and ``OBNLMpackage tools`` have been offered on the GitHub.
+# Prepare data
+- ``DEM-modeled drainage network.shp``: the DEM-modeled drainage network polyline
+- ``RS-mapped river network.shp``: the river centerlines of the RS water body mask 
+- ``RS water mask.tif``: the binary water body mask, water is set to 1, non-water is 0
+
+**In order to ensure this code runs correctly, please make sure the coordinates are consistent**
+# Create Geodatabase
+Create a ``File Geodatabase.gdb`` and import the three files in it.
 
 Download ``DIPimage`` from http://www.diplib.org/download and install it. 
 ![alt text](https://github.com/njuRS/picture/blob/master/1549183782(1).jpg?raw=true)
