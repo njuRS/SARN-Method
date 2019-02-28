@@ -15,7 +15,7 @@ Create a ``File Geodatabase.gdb`` and import the three files in it. All process 
 
 
 
-# Run river detection code
+# Run river connection code
 Here, we provide ``run_river_detection.m`` to detect river in single image and ``run_batch_river_detection.m`` for batch detection. 
 
 - Open ``Matlab River Detection code`` folder in MATLAB. 
