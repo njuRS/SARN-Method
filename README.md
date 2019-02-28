@@ -9,23 +9,11 @@ Python with ``ArcPy`` package
 
 **In order to ensure this code runs correctly, please make sure the coordinates are consistent**
 # Create Geodatabase
-Create a ``File Geodatabase.gdb`` and import the three files in it.
+Create a ``File Geodatabase.gdb`` and import the three files in it. All process data will be saved in this database.
 
-Download ``DIPimage`` from http://www.diplib.org/download and install it. 
 ![alt text](https://github.com/njuRS/picture/blob/master/1549183782(1).jpg?raw=true)
 
-## Set Path
-- Click **set path** in Matlab GUI. 
-- Add ``2DSpecTools``, ``OBNLMpackage``, ``DIPimage tools``, ``Matlab River Detection code`` folder to **MATLAB environment**. 
-- **Save**. 
 
-![alt text](https://github.com/njuRS/picture/blob/master/1549183824(1).jpg?raw=true)
-
-## Open ``Matlab River Detection code`` folder in MATLAB
-![alt text](https://github.com/njuRS/picture/blob/master/1549183850(1).jpg?raw=true)
-
-## Change the path of ``DIPimage`` in ``pathopening.m``
-![alt text](https://github.com/njuRS/picture/blob/master/1549183861(1).jpg?raw=true)
 
 # Run river detection code
 Here, we provide ``run_river_detection.m`` to detect river in single image and ``run_batch_river_detection.m`` for batch detection. 
