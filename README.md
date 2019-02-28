@@ -3,9 +3,9 @@
 # Environment
 Python with ``ArcPy`` package
 # Data preparation
--``DEM-modeled drainage network.shp``:the DEM-modeled drainage network polyline
--``RS-mapped river network.shp``:the river centerlines of the RS water body mask 
--``RS water mask.tif``:the binary water body mask, water is set to 1, non-water is 0
+- ``DEM-modeled drainage network.shp``:the DEM-modeled drainage network polyline
+- ``RS-mapped river network.shp``:the river centerlines of the RS water body mask 
+- ``RS water mask.tif``:the binary water body mask, water is set to 1, non-water is 0
 ## Install tools
 ``2DSpecTools`` and ``OBNLMpackage tools`` have been offered on the GitHub.
 
