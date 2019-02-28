@@ -11,7 +11,7 @@ Python with ``ArcPy`` package
 # Create Geodatabase
 Create a ``File Geodatabase.gdb`` and import the three files in it. All process data will be saved in this database.
 
-![alt text](https://github.com/njuRS/picture/blob/master/1549183782(1).jpg?raw=true)
+![alt text](https://github.com/njuRS/picture/blob/master/create_database.png?raw=true)
 
 
 
