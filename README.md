@@ -37,7 +37,8 @@ Create a ``File Geodatabase.gdb`` and import the three files in it. All process 
 
 - Click **run**.
 
-These two shapefiles in the red box are the result. ``unspit_split_coincide + DEM name.shp`` is the RS-mapped river segments, and ``unspit_split_connect + DEM name.shp`` is the DEM-modeled river segments.
+- These two shapefiles in the red box are the result. ``unspit_split_coincide + DEM name.shp`` is the RS-mapped river segments, and ``unspit_split_connect + DEM name.shp`` is the DEM-modeled river segments.
+
 ![alt text](https://github.com/njuRS/picture/blob/master/result.png?raw=true)
 
 ![alt text](https://github.com/njuRS/picture/blob/master/result2.png?raw=true)
