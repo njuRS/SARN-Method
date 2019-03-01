@@ -6,16 +6,18 @@ Python with ``ArcPy`` package
 - ``DEM-modeled drainage network.shp``: the DEM-modeled drainage network polyline
 - ``RS-mapped river network.shp``: the river centerlines of the RS water body mask 
 - ``RS water mask.tif``: the binary water body mask, water is set to 1, non-water is 0
+![alt text](https://github.com/njuRS/picture/blob/master/data.jpg?raw=true)
 
 **In order to ensure this code runs correctly, please make sure the coordinates are consistent**
 # Create Geodatabase
 Create a ``File Geodatabase.gdb`` and import the three files in it. All process data will be saved in this database.
 
 ![alt text](https://github.com/njuRS/picture/blob/master/create_database.png?raw=true)
-
+![alt text](https://github.com/njuRS/picture/blob/master/add_files_into_geodatabase.png?raw=true)
 
 
 # Run river connection code
+
 Here, we provide ``run_river_detection.m`` to detect river in single image and ``run_batch_river_detection.m`` for batch detection. 
 
 - Open ``Matlab River Detection code`` folder in MATLAB. 
