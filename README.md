@@ -24,27 +24,21 @@ Create a ``File Geodatabase.gdb`` and import the three files in it. All process 
 # Run river connection code
 
 - Open ``connect_river.py`` in Python. 
-- Write down the file path
 - Set input **6 parameters**. 
 
 | parameters | description |
 |----|---|
-|  |  **WV**: WorldView image  |
-|  |  **SPOT**: SPOT image  |
-|*sensor*  |  **Sentinel2**: Sentinle-2 image after NDWI calculation  |
-|  |  **Landsat**: Landsat panchromatic image  |
-|  |  **LandsatNDWILandsat**: image after NDWI calculation  |
-|*inverse*  |set 1 to convert dark rivers into bright rivers (e.g., for panchromatic image); set 0 to keep bright rivers (e.g., for NDWI images)|
-|*width*  |small river width for Gabor filter, default = 2|
-|*ppo_length*  |path opening length, default = 20|
-|*histCountThreshold*  |a pixel count threshold to stretch image pixel values, default = 1000|
-|*Smooth (optional)*  |used for denoise algorithm. Because denoise algorithm is too slow and scale dependent, is abandoned for large images,  default = 0.7|
+|*workspace*  |the path of the geodatabaseset|
+|*DEM*  |the name of the DEM-modeled drainage network|
+|*RS_vector*  |the name of the RS-mapped river centerlines|
+|*RS_Raster*  |the name of the RS binary water body mask|
+|*cell size*  |the cell size of the images, Sentinel-2 imagery is 10|
+|*delete_length*  |river length less than 300 m will be deleted|
 
 - Click **run**.
 
-If you see these commands in the command window, the river detection code is running successfully.
+These two shapefiles are the result. 
 ![alt text](https://github.com/njuRS/picture/blob/master/1549183907(1).jpg?raw=true)
-You will get 3 processed images. ``test_sentinel2_image_bandpass_gabor_cpo20.tif`` is the final result.
 ![alt text](https://github.com/njuRS/picture/blob/master/1549183928(1).jpg?raw=true)
 
 # Acknowledgements
