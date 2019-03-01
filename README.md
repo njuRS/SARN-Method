@@ -6,24 +6,25 @@ Python with ``ArcPy`` package
 - ``DEM-modeled drainage network.shp``: the DEM-modeled drainage network polyline
 - ``RS-mapped river network.shp``: the river centerlines of the RS water body mask 
 - ``RS water mask.tif``: the binary water body mask, water is set to 1, non-water is 0
+
 ![alt text](https://github.com/njuRS/picture/blob/master/data.jpg?raw=true)
+
 
 **In order to ensure this code runs correctly, please make sure the coordinates are consistent**
 # Create Geodatabase
 Create a ``File Geodatabase.gdb`` and import the three files in it. All process data will be saved in this database.
 
 ![alt text](https://github.com/njuRS/picture/blob/master/create_database.png?raw=true)
+
+
+
 ![alt text](https://github.com/njuRS/picture/blob/master/add_files_into_geodatabase.png?raw=true)
 
 
 # Run river connection code
 
-Here, we provide ``run_river_detection.m`` to detect river in single image and ``run_batch_river_detection.m`` for batch detection. 
-
-- Open ``Matlab River Detection code`` folder in MATLAB. 
-![alt text](https://github.com/njuRS/picture/blob/master/1549183850(1).jpg?raw=true)
-- Open ``run_river_detection.m`` or ``run_batch_river_detection.m``. 
-- Write the **image path**. ``test_sentinel2_image.tif`` is provided as test image. 
+- Open ``connect_river.py`` in Python. 
+- Write down the file path
 - Set input **6 parameters**. 
 
 | parameters | description |
@@ -39,8 +40,6 @@ Here, we provide ``run_river_detection.m`` to detect river in single image and `
 |*histCountThreshold*  |a pixel count threshold to stretch image pixel values, default = 1000|
 |*Smooth (optional)*  |used for denoise algorithm. Because denoise algorithm is too slow and scale dependent, is abandoned for large images,  default = 0.7|
 
-**You can add your customized sensor (image) easily. The only requirement is to reset the band pass frequency based on the spatial resolution of your input image.**
-
 - Click **run**.
 
 If you see these commands in the command window, the river detection code is running successfully.
@@ -50,12 +49,6 @@ You will get 3 processed images. ``test_sentinel2_image_bandpass_gabor_cpo20.tif
 
 # Acknowledgements
 ## Corresponding Author
-- Kang Yang (kangyang@nju.edu.cn, ph: 13814179324, School of Geography and Ocean Science, Nanjing University) 
 - Xin Lu (xinlu.nju@gmail.com, School of Geography and Ocean Science, Nanjing University)
+- Kang Yang (kangyang@nju.edu.cn, ph: 13814179324, School of Geography and Ocean Science, Nanjing University) 
 - Yao Lu (yaolu.nju@gmail.com, School of Geography and Ocean Science, Nanjing University)
-## For more information, please see the paper
-Yang, K. , Karlstrom, L., Smith, L.C., Li, M., 2017. Automated high resolution satellite image registration using supraglacial rivers on the Greenland Ice Sheet. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 10(3): 845-856.
-
-Yang, K. , Li, M., Liu, Y., Cheng, L., Huang, Q., Chen, Y., 2015. River Detection in Remotely Sensed Imagery Using Gabor Filtering and Path Opening. Remote Sensing, 7(7): 8779-8802.
-
-Yang, K. , Li, M., Liu, Y., Cheng, L., Duan, Y., Zhou, M., 2014. River Delineation from Remotely Sensed Imagery Using a Multi-Scale Classification Approach. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 7(12): 4726-4737.
