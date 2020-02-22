@@ -1,4 +1,4 @@
-<h1 align="center">River Connection Code</h1>
+<h1 align="center">SARN (Sentinel-ArcticDEM merged River Network)</h1>
 
 # Environment
 Python with ``ArcPy`` package
@@ -44,6 +44,9 @@ Create a ``File Geodatabase.gdb`` and import the three files in it. All process 
 ![alt text](https://github.com/njuRS/picture/blob/master/result2.png?raw=true)
 
 # Acknowledgements
+## Cite
+Lu, X., Yang, K., Lu, Y., Gleason, C.J., Smith, L.C., & Li, M. (2020). Small Arctic rivers mapped from Sentinel-2 satellite imagery and ArcticDEM. Journal of Hydrology, 584, 124689
+
 ## Corresponding Author
 - Xin Lu (xinlu.nju@gmail.com, ph:15951756762, School of Geography and Ocean Science, Nanjing University)
 - Kang Yang (kangyang@nju.edu.cn, School of Geography and Ocean Science, Nanjing University) 
