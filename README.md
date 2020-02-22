@@ -4,7 +4,7 @@
 Python with ``ArcPy`` package
 # Prepare data
 - ``DEM-modeled drainage network.shp``: the DEM-modeled drainage network polyline
-- ``RS-mapped river network.shp``: the river centerlines of the RS water body mask. We used the river dection method proposed by Kang Yang (https://github.com/njuRS/River_detection.git). You can use the customed RS water body mask instead.
+- ``RS-mapped river network.shp``: the river centerlines of the RS water body mask. We used the river detection method proposed by Kang Yang (https://github.com/njuRS/River_detection.git). You can use the customed RS water body mask instead.
 - ``RS water mask.tif``: the binary water body mask, water is set to 1, non-water is 0
 
 ![alt text](https://github.com/njuRS/picture/blob/master/data.jpg?raw=true)
