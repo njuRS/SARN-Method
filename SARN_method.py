@@ -3,7 +3,7 @@
 #maintainer = "Lu Xin"
 #email = "luxin_nju@outlook.com"
 #status = "Production"
-#description = "delete errpr and connect river"
+#description = "delete error and connect river"
 
 import arcpy,os,sys
 from arcpy import env
