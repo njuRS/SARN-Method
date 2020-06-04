@@ -1,7 +1,7 @@
 #license = "GPL"
 #version = "0.1"
 #maintainer = "Lu Xin"
-#email = "luxin_nju@outlook.com"
+#email = "xinlu.nju@gmail.com"
 #status = "Production"
 #description = "delete error and connect river"
 
